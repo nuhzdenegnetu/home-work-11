@@ -160,8 +160,8 @@ function createStructure() {
   )
 }
 
-task('comb', series(comb, compileScss, compileScssMin))
-task('scss', series(comb, compileScss, compileScssMin))
+task('comb', series(comb, compileScss))
+task('scss', series(comb, compileScss))
 task('dev', series(compileScssDev))
 task('min', series(compileScssMin))
 task('pug', series(compilePug))
