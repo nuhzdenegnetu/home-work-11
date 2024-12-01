@@ -1,0 +1,14 @@
+@use '../presets/skin' as  *;
+@use '../presets/variables' as *;
+
+.video {
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+.video__item {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  animation-name: video;
+}

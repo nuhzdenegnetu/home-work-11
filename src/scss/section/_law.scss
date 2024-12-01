@@ -1,0 +1,16 @@
+@use '../presets/skin' as  *;
+@use '../presets/variables' as *;
+
+.law {
+  background-color: $color-blue;
+}
+.law__content {
+  color: $color-white;
+}
+.law__title {
+  padding-top: 50px;
+  padding-bottom: 21px;
+}
+.law__description {
+  padding-bottom: 50px;
+}

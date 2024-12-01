@@ -1,0 +1,19 @@
+@use '../presets/skin' as  *;
+@use '../presets/variables' as *;
+
+.about__title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: $line-height;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.about__description {
+  font-weight: 400;
+  line-height: $line-height;
+  width: 540px;
+  height: 67px;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-description;
+}

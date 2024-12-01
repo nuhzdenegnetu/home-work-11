@@ -1,4 +1,5 @@
-@use '../variables' as *;
+@use '../presets/skin' as  *;
+@use '../presets/variables' as *;
 
 .content {
   display: flex;
@@ -10,7 +11,7 @@
   font-size: 3rem;
   font-weight: 500;
   line-height: $line-height;
-  margin: 0 0 33px;
+  margin: 0 0 32px;
 }
 .content__description {
   font-weight: 400;

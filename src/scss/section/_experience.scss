@@ -1,0 +1,27 @@
+@use '../presets/skin' as  *;
+@use '../presets/variables' as *;
+
+.experience {
+  padding: 100px 0 100px 0;
+  background-color: $color-blue;
+}
+.experience__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+}
+.experience-item__number {
+  font-size: 1.3125rem;
+}
+.experience-item__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: space-evenly;
+}
+.experience-item {
+  display: flex;
+  flex-direction: row-reverse;
+  color: $color-white;
+}
