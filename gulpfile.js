@@ -114,7 +114,7 @@ async function sync() {
 
 function watchFiles() {
   serverInit()
-  if (!option) watch(PATH.scssAllFiles, series(compileScss, compileScssMin))
+  if (!option) watch(PATH.scssAllFiles, series(compileScss))
   if (option === '--dev') watch(PATH.scssAllFiles, series(compileScssDev))
   if (option === '--css') watch(PATH.cssAllFiles, sync)
   watch(PATH.htmlAllFiles, sync)

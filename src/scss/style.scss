@@ -1,102 +1,34 @@
-:root {
-    --color-blue: #34547a;
-    --color-discription: #717171;
-    --color-light: #eeeff1;
-    --color-white: #fff;
-    --color-black: #000;
+@use 'variables' as *;
+@use 'common/index' as *;
+@use 'section/index' as *;
 
-    --font-family: 'Roboto', sans-serif;
-    --font-size: 16px;
 
-    --line-height: 1.64;
-    --letter-spacing: .1em;
-
-    --container-primary: 1110px;
-    --container-secondary: 540px;
-
-    --gap: 20px;
-    --gap-sm: calc(var(--gap) * .5);
-    --gap-md: calc(var(--gap) * 1.5);
-    --gap-lg: calc(var(--gap) * 2);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: var(--font-size);
-}
-.container {
-    width: min(100% - var(--gap-lg), var(--container-primary));
-    margin-inline: auto;
-}
-.item-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    white-space: nowrap;
-    border: 0;
-    clip-path: inset(100%);
-}
-.header {
-    width: 100%;
-    padding-top: 69px;
-    padding-bottom: 141px;
-    background-color: var(--color-light);
-}
-.navbar {
-    margin-bottom: 136px;
-}
-.navbar__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px var(--gap-lg);
-}
-.navbar__link {
-    line-height: var(--line-height);
-    display: block;
-    padding: .5em 3px .5em 0;
-    letter-spacing: var(--letter-spacing);
-    color: var(--color-black);
-}
-.navbar__link--active {
-    font-weight: 500;
-    color: var(--color-blue);
-}
 .content {
     display: flex;
     flex-direction: column;
-    max-width: var(--container-secondary);
+    max-width: $container-secondary;
     align-items: self-start;
 }
 .content__title {
     font-size: 3rem;
     font-weight: 500;
-    line-height: var(--line-height);
+    line-height: $line-height;
     margin: 0 0 33px;
 }
 .content__description {
     font-weight: 400;
-    line-height: var(--line-height);
+    line-height: $line-height;
     margin-bottom: 57px;
-    color: var(--color-discription);
+    color: $color-description;
 }
 .content__link {
     display: flex;
     min-width: 225px;
     min-height: 65px;
     padding: .5em 1em;
-    letter-spacing: var(--letter-spacing);
-    color: var(--color-white);
-    background-color: var(--color-blue);
+    letter-spacing: $letter-spacing;
+    color: $color-white;
+    background-color: $color-blue;
     justify-content: center;
     align-items: center;
 }
@@ -107,22 +39,22 @@ html {
 .about__title {
     font-size: 2rem;
     font-weight: 500;
-    line-height: var(--line-height);
+    line-height: $line-height;
     padding-bottom: 50px;
     text-align: center;
 }
 .about__description {
     font-weight: 400;
-    line-height: var(--line-height);
+    line-height: $line-height;
     width: 540px;
     height: 67px;
     margin: 0 auto;
     text-align: center;
-    color: var(--color-discription);
+    color: $color-description;
 }
 .experience {
     padding: 100px 0 100px 0;
-    background-color: var(--color-blue);
+    background-color: $color-blue;
 }
 .experience__list {
     display: flex;
@@ -142,24 +74,24 @@ html {
 .experience-item {
     display: flex;
     flex-direction: row-reverse;
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .work__title {
     font-size: 2rem;
     font-weight: 500;
-    line-height: var(--line-height);
+    line-height: $line-height;
     padding-bottom: 50px;
     text-align: center;
 }
 .work__description {
     font-weight: 400;
-    line-height: var(--line-height);
+    line-height: $line-height;
     width: 540px;
     height: 67px;
     margin: 0 auto;
     text-align: center;
-    color: var(--color-discription);
+    color: $color-description;
 }
 .video {
     display: flex;
@@ -173,10 +105,10 @@ html {
     animation-name: video;
 }
 .law {
-    background-color: var(--color-blue);
+    background-color: $color-blue;
 }
 .law__content {
-    color: var(--color-white);
+    color: $color-white;
 }
 .law__title {
     padding-top: 50px;

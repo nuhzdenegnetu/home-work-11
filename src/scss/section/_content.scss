@@ -1,0 +1,31 @@
+@use '../variables' as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: $container-secondary;
+  align-items: self-start;
+}
+.content__title {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: $line-height;
+  margin: 0 0 33px;
+}
+.content__description {
+  font-weight: 400;
+  line-height: $line-height;
+  margin-bottom: 57px;
+  color: $color-description;
+}
+.content__link {
+  display: flex;
+  min-width: 225px;
+  min-height: 65px;
+  padding: .5em 1em;
+  letter-spacing: $letter-spacing;
+  color: $color-white;
+  background-color: $color-blue;
+  justify-content: center;
+  align-items: center;
+}

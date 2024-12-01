@@ -1,0 +1,27 @@
+@use '../variables' as *;
+
+.header {
+  width: 100%;
+  padding-top: 69px;
+  padding-bottom: 141px;
+  background-color: $color-light;
+}
+.navbar {
+  margin-bottom: 136px;
+}
+.navbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px $gap-lg;
+}
+.navbar__link {
+  line-height: $line-height;
+  display: block;
+  padding: .5em 3px .5em 0;
+  letter-spacing: $letter-spacing;
+  color: $color-black;
+}
+.navbar__link--active {
+  font-weight: 500;
+  color: $color-blue;
+}
